@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    @font-face {
+      font-family: 'UhBeepuding';
+      src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+    body { font-family: 'UhBeepuding'; }
+    ul li {
+      list-style:none;
+      border: 1px solid rgb(255, 180, 241);
+      background-color: rgb(255, 240, 194);
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px;
+    }
+
+    ul li:nth-child(2n+1) {
+      background-color: rgb(255, 250, 228);
+    }
+
+    ul li:nth-child(2n) {
+      background-color: rgb(243, 217, 255);
+    }
+
+    /* first-child == first-of-type, last도 마찬가지*/
+    ul li:first-child {
+      background-color: rgb(255, 226, 242);
+      border-radius: 10px 10px 0 0;
+    }
+
+    ul li:last-child {
+      background-color: rgb(233, 240, 255);
+      border-radius: 0px 0px 10px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="width: 500px; font-size:20px; margin:0 auto;"><span style="color: rgb(168, 70, 255); font-size: 30px;">구조 선택자</span>
+    는 구조에 따라서 CSS속성이 변하는 설정을 할 수 있다.</h1>
+  <div style="width: 400px; margin:0 auto;">
+    <ul>
+      <li><a href="#">메뉴1</a></li>
+      <li><a href="#">메뉴2</a></li>
+      <li><a href="#">메뉴3</a></li>
+      <li><a href="#">메뉴4</a></li>
+      <li><a href="#">메뉴5</a></li>
+      <li><a href="#">메뉴6</a></li>
+      <li><a href="#">메뉴7</a></li>
+      <li><a href="#">메뉴8</a></li>
+    </ul>
+  </div>
+</body>
+</html>

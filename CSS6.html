@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>상태선택자</title>
+  <style>
+  @font-face {
+    font-family: 'UhBeepuding';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body { font-family: 'UhBeepuding'; }
+
+  input { font-family: 'UhBeepuding'; font-size: 15px; padding:5px;}
+
+  input:focus {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 10px;
+  }
+
+  input: enabled {
+    color: rgb(130, 130, 130);
+    font-weight: bold;
+  }
+
+  input: disabled {
+    color: rgb(179, 0, 0);
+  }
+  </style>
+</head>
+<body>
+  <h1 style="width: 500px; font-size:20px; margin:0 auto;"><span style="color: rgb(255, 68, 167); font-size: 30px;">상태 선택자</span>
+    는 CSS속성이 변화를 감지하여 변하는 설정을 할수 있음</h1>
+  <div style="width: 150px; margin:0 auto;">
+    <form action="">
+      이름: <input type="text" name="uname"><br>
+      아이디: <input type="text" name="uid"><br>
+      비밀번호: <input type="password" name="upw"><br>
+    </form>
+  </div>
+</body>
+</html>
