@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  @font-face {
+font-family: 'UhBeepuding';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeepuding.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+    body { font-family: 'UhBeepuding';}
+    #header {
+      width: 500px;
+      border: 1px solid #303030;
+      font-size:2em;
+      font-weight: bold;
+      text-align: center;
+    }
+    #footer {
+      width: 500px;
+      border: 1px solid #303030;
+      font-size:2em;
+      font-weight: bold;
+      text-align: center;
+      background-color: rgb(165, 204, 125);
+    }
+    #wrap {
+      width: 500px;
+      border: 1px solid rgb(255, 198, 171);
+      overflow: hidden;
+      background: rgb(204, 229, 255);
+    }
+    #content {width: 300px; float: left; border: 4px dashed rgb(255, 255, 255);}
+    #side_banner {
+      float: left;
+      text-align: center;
+      vertical-align: middle;
+      margin-left: 40px;
+    }
+    #thin {margin-top: -5px; margin-bottom: 0px;}
+    .menu1, .menu3, .menu5 {color: rgb(71, 79, 107);}
+    .menu2 { font-weight: bold;}
+  </style>
+</head>
+<body>
+  <div id="header">
+    header
+  </div>
+
+  <div id="wrap">
+    <div id="content">
+      <ul>
+        <li class="menu1">menu1</li>
+        <li class="menu2">menu2: 얘만 "font-weight: bold"야.</li>
+        <li class="menu3">menu3</li>
+        <li class="menu4">menu4</li>
+        <li class="menu5">menu5</li>
+      </ul>
+    </div>
+    <div id="side_banner">
+      <h1 id="thin">BANNER</h1>
+      <img src="img/oieuoa.jpg" width = 100px alt="가용"></div>
+  </div>
+
+  <div id="footer">
+    footer
+  </div>
+</body>
+</html>
