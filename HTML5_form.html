@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- action: 폼을 전송할 서버의 주소이다. -->
+  <!-- method: get(정보가 URL에 보이므로 유출될 가능성 높음)/post(정보가 암호화되어서 서버로 간다) -->
+  <!-- method의 default value는 get이다. -->
+  <form action="#" method="get">
+    이름: <input type="text" name="uname">
+    <br>
+    아이디: <input type="text" name="uid">
+    <br>
+    비밀번호: <input type="text" name="upw">
+    <br>
+    연락처: <input type="text" name="uphone1">-<input type="text" name="uphone2">-<input type="text" name="uphone3">
+    <br><br>
+    사진: <input type="file" name="upic"><br>
+
+    <!-- radio button 같이 선택하는 것들은 이제 name이라는 것에 선택한 value가 들어가괴 되는 것이다 -->
+    성별구분: <input type="radio" name="gender" value="m">남
+            <input type="radio" name="gender" value="w">여
+            <br>
+    사용언어:
+          <input type="checkbox" name="lan" value="kor" checked="checked">한글,
+          <input type="checkbox" name="lan" value="eng">영어,
+          <input type="checkbox" name="lan" value="jap">일어,
+          <input type="checkbox" name="lan" value="chi">중국어
+          <br>
+    자기소개: <textarea name="introduce" rows="5" cols="20">간단하게 입력하세요.</textarea><br>
+
+    국적:
+    <select>
+      <option value="kor">KOREA</option>
+      <option value="usa">USA</option>
+      <option value="jap">JAPAN</option>
+      <option value="chi">CHINA</option>
+    </select><br>
+
+    좋아하는음식:
+    <select multiple="multiple">
+      <option value="kimchi">김치</option>
+      <option value="bulgogi">불고기</option>
+      <option value="pajeon">파전</option>
+      <option value="bibimbap">비빔밥</option>
+    </select><br>
+    <input type="submit">
+    <!-- submit을 누르면 action의 주소로 정보들이 전송되는 것이다! -->
+  </form>
+</body>
+</html>

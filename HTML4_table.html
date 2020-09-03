@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- table:표, border: 표 선 두께 -->
+  <table border="1">
+    <tr>
+      <td>1행1열</td>
+      <td>1행2열</td>
+      <td>1행3열</td>
+    </tr>
+    <tr>
+      <td>2행1열</td>
+      <td>2행2열</td>
+      <td>2행3열</td>
+    </tr>
+    <tr>
+      <td>3행1열</td>
+      <td>3행2열</td>
+      <td>3행3열</td>
+    </tr>
+  </table>
+  <br>
+
+  <table border="1">
+    <tr>
+      <!-- rowspan: 여러 행을 합침. 값은 몇열까지 인지 -->
+      <td rowspan="4">중간고사 성적</td>
+    </tr>
+    <tr>
+      <td>국어</td>
+      <td>영어</td>
+      <td>수학</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>60</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td colspan="2">평균</td>
+      <td>80</td>
+    </tr>
+  </table>
+</body>
+</html>
