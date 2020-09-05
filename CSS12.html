@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>selection 선택자</title>
+  <style>
+    @font-face {
+      font-family: 'Nanum Gothic';
+      font-style: normal;
+      font-weight: 400;
+      src: url('https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot');
+      src: url('https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'),
+           url('https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff2') format('woff2'),
+           url('https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff') format('woff'),
+           url('https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.ttf') format('truetype');
+    }
+
+    body{ font-family: 'Nanum Gothic'; }
+
+    #wrap {
+        width:800px;
+        margin:0 auto;
+    }
+
+    #header {
+      color: rgb(73, 73, 73);
+      border-bottom: 1px solid rgb(156, 156, 156);
+    }
+
+    body ::selection {
+      background-color: none;
+      color: rgb(0, 235, 204);
+    }
+    #reason1::first-letter, #reason2::first-letter {
+      font-size: 2em;
+    }
+
+    #reason1::first-line, #reason2::first-line {
+      font-weight: bold;
+      color: rgb(73, 73, 73);
+    }
+
+    #footer ul {
+      overflow: hidden;
+      border: 2px solid rgb(203, 203, 203);
+    }
+
+    #footer ul li {
+      list-style: none;
+      float: left;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 문자 선택자: 특정 문자 또는 문자열을 선택하여 CSS속성을 설정할 수 있다. -->
+
+  <div id="wrap">
+
+    <div id="header">
+      <h1>윤가영이 졸린 이유</h1>
+    </div>
+    <div id="content">
+      <p><i style="color: rgb(136, 136, 136);">Drag the contents!</i></p>
+      <p>CSS 강의를 듣고 있는 지금, 윤가영이 졸고 있다. 잠을 깨기 위해 이렇게 예시도
+      재미있게 적어보지만 효과는 없다. 비몽사몽하면서도 수업을 잘 듣고 있다는 것은 참 다행이다.
+      그나저나 윤가영이 지금 졸린 이유는 무엇일까?</p>
+      <p id="reason1">
+        오늘 몇 시에 일어 났더라?<br>그러고보니 오늘 아침에 일찍 일어났다.
+        11시에 일어났으면 일찍 일어난 것이다. 사실 어제 잠이 안와서 운동하고 스트레칭하고
+        유튜브 좀 보고 잤더니 5시에 잤기 때문에 별로 못잔거다. 내가 그렇다면 그런거야!
+      </p>
+      <p id="reason2">
+        잠을 제대로 못 잤다. <br>요즘 잠을 깊게 잘 못 잔다.
+        아까 새벽에 겨우겨우 든 잠도 계속 추워서 깼었다.
+        이제 가을이라 따뜻하게 입고 자야하는데, 잠이 들 때는 춥지 않아서 대충 반팔입고 자다가
+        새벽에 깨서 이불을 제대로 덮고 다시 잠에 들곤 한다.
+      </p>
+    </div>
+
+    <div id="footer">
+      <ul>
+        <li><img src="img/logo.png" alt="jonnaJolim" width="150px"></li>
+        <li><img src="img/footer.png" alt="footer" width="500px"></li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>링크선택자 a::after content 설정</title>
+  <style>
+    @font-face {
+      font-family: 'Nanum Gothic';
+      font-style: normal;
+      font-weight: 400;
+      src: url('https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot');
+      src: url('https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'),
+           url('https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff2') format('woff2'),
+           url('https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.woff') format('woff'),
+           url('https://themes.googleusercontent.com/static/fonts/earlyaccess/nanumgothic/v3/NanumGothic-Regular.ttf') format('truetype');
+    }
+
+    body{ font-family: 'Nanum Gothic'; }
+
+    #wrap {
+        width:800px;
+        margin:0 auto;
+    }
+
+    #header {
+      color: rgb(73, 73, 73);
+      border-bottom: 1px solid rgb(156, 156, 156);
+    }
+
+    #content a {
+      text-decoration: none;
+    }
+
+    #content a::after {
+      content: ' - ' attr(href);
+    }
+
+    #footer ul {
+      overflow: hidden;
+      border: 2px solid rgb(203, 203, 203);
+    }
+
+    #footer ul li {
+      list-style: none;
+      float: left;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div id="header">
+      <h1>weekly connect website</h1>
+    </div>
+    <div id="content">
+      <ul>
+        <li><a href="http://www.google.com">구글</a></li>
+        <li><a href="http://www.ewha.ac.kr">이화여자대학교</a></li>
+        <li><a href="https://github.com/kyY00n">my github</a></li>
+        <li><a href="http://blog.naver.com/rkdkdudjd">my blog</a></li>
+      </ul>
+    </div>
+    <div id="footer">
+      <ul>
+        <li><img src="img/logo.png" alt="jonnaJolim" width="150px"></li>
+        <li><img src="img/footer.png" alt="footer" width="500px"></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
