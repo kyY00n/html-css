@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>font 속성</title>
+  <style>
+    #nav {
+      width: 800px;
+      /* 정렬을 하려면 width를 정해줘야 합니다. */
+      margin:0 auto;
+      border:1px solid #cccccc;
+      overflow:hidden;
+      /* overflos: hidden 은 안에 있는 요소들의 float을 설정할 때 필수! */
+    }
+
+    #nav div {
+      width: 150px;
+      height: 100px;
+      line-height: 100px;
+      /* line-height: 글자 수직 정렬 건드는 설정인것같다. */
+      float: left;
+      text-align: center;
+      font-size: 1.5em;
+
+      border-top: 1px solid #cccccc;
+      border-bottom: 1px solid #cccccc;
+      margin:5px;
+    }
+
+    a {
+      text-decoration:none;
+      color:#282828;
+    }
+  </style>
+</head>
+<body>
+  <div id="nav">
+    <div><a href="#">menu1</a></div>
+    <div><a href="#">menu2</a></div>
+    <div><a href="#">menu3</a></div>
+    <div><a href="#">menu4</a></div>
+    <div><a href="#">menu5</a></div>
+  </div>
+</body>
+</html>

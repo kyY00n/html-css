@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #dddddd;
+    }
+
+    div {
+      width:200px;
+      height:200px;
+      margin:10px;
+      padding:10px;
+      border:10px solid #ff8d00;
+    }
+
+    div:nth-child(2) {
+      margin:0;
+      border:0;
+      padding:0;
+      background-color: #ff0000;
+    }
+
+    div:nth-child(3) {
+      background-color: #00ff00;
+      box-sizing: border-box;
+      border-style: dashed;
+    }
+
+    div:nth-child(4) {
+      background-color: #0000ff;
+      box-sizing: content-box;
+    }
+  </style>
+</head>
+<body>
+  <div>기본<br>200*200<br>margin, padding 각각 10px</div>
+  <div>200*200</div>
+  <div>200*200 보더까지의 크기</div>
+  <div>200*200 파란부분크기</div>
+</body>
+</html>
